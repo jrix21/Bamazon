@@ -9,8 +9,8 @@ var connection = mysql.createConnection({
     user: "root",
 
     // Your password,m 
-    password: "",
-    database: "bamazon"
+    password: "root",
+	database: "bamazon"
 });
 
 connection.connect(function(err) {
@@ -26,14 +26,14 @@ function transaction() {
 
             console.log("\n");
 
-            console.log("||||||||||||||| TOOLS CATALOG |||||||||||||||");
+            console.log("||||||||||||||| Devil Fruit Catalog |||||||||||||||");
             console.log("---------------------------------------------");
 
             var inventoryCount = res.length;
 
             for (var i = 0; i < res.length; i++) {
 
-                console.log("#" + res[i].item_id + 
+                console.log(" " + res[i].item_id + 
                             " " + res[i].product_name +
                             " (Ct:" + res[i].stock_quantity + ") " + 
                             " Cost: $" + res[i].price );
@@ -55,7 +55,7 @@ function transaction() {
 
 				    {
 				      name: 'amount',
-				      description: 'How many units would you like to purchase?',
+				      description: 'How many Devil-Fruits would you like to purchase?',
 				      message: 'You need to select an amount using a number.',
 				      type: 'integer',
 				      required: true
@@ -94,7 +94,7 @@ function transaction() {
 
 			                else {
 
-                                console.log("\nUnfortunately we have sold out of that tool, one second...");
+                                console.log("\nUnfortunately we have sold out of that Devil Fruit, one second...");
                                 console.log("\nHey Jimmy, order us some more " + res[i].product_name + "(s).");
 
 			                	connection.end();
