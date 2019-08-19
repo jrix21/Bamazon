@@ -12,14 +12,19 @@ CREATE TABLE products (
   PRIMARY KEY (item_id)
 );
 
-INSERT INTO products (item_id, product_name, department_name, price, stock_quantity) VALUES
-("1", "Wrench", "Tools", "4.99", "20"),
-("2", "Hammer", "Tools", "10.99", "7"),
-("3", "Screwdriver Set", "Tools", "8.99", "10"),
-("4", "Sledgehammer", "Tools", "24.99", "5"),
-("5", "Ratchet Set", "Tools", "17.99", "8"),
-("6", "Crowbar", "Tools", "6.99", "3"),
-("7", "Pliers", "Tools", "3.99", "15"),
-("8", "Breaker Bar", "Tools", "11.99", "5"),
-("9", "Jack", "Tools", "28.99", "4"),
-("10", "Jack Stands", "Tools", "2.99", "37");
+INSERT INTO products (product_name, department_name, price, stock_quantity) VALUES
+("Mera Mera", "Logia", "300000", "1"),
+("Moku Moku", "Logia", "100000", "1"),
+("Suna Suna", "Logia", "200000", "1"),
+("Goro Goro", "Logia", "500000", "1"),
+("Pika Pika", "Logia", "300000", "1"),
+("Numa Numa", "Logia", "100000", "1"),
+("Gomu Gomu", "Logia", "100000", "1"),
+("Op Op", "Paramecia", "1000000", "1"),
+("Bara Bara", "Paramecia", "50000", "1"),
+("Hana Hana", "Paramecia", "75000", "1"),
+("Ushi Ushi", "Zoan", "100000", "1"),
+("Tori Tori: Model Eagle", "Zoan", "100000", "1"),
+("Tori Tori: Model Pheonix", "Zoan", "500000", "1"),
+("Hito Hito", "Zoan", "1", "1"),
+("Ryu Ryu: Model Allosaurus", "Zoan", "100000", "10")
